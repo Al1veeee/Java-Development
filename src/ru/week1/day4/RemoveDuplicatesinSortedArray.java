@@ -1,19 +1,25 @@
 package ru.week1.day4;
 
 public class RemoveDuplicatesinSortedArray {
-    public static void main(String[] args) {
-        int[] arr = {1, 1, 2, 3, 3, 3, 4, 5, 6, 7, 7};
-        int[] new_array = new int[10];
-
-        for (int i = 0, j = 1; i < arr.length-1; i++, j++) {
-            if (arr[i] != arr[j]) {
-                new_array[i] = arr[j];
-            } else if (arr[i] == arr[j]) {
-                new_array[i] = arr[i];
+    public static int RemoveDublicates(int[] nums) {
+        int k = 1;
+        int n = nums.length;
+        if (n <= 1) {
+            return n;
+        }
+        for (int i = 1; i < n; i++) {
+            if (nums[i] != nums[i-1]) {
+                nums[k++] = nums[i];
             }
         }
-        for (int num : new_array) {
-            System.out.print(num + " ");
+        return k;
+    }
+    public static void main(String[] args) {
+        int[] nums = {1, 1, 2, 3, 3, 3, 4, 5, 6, 7, 7};
+        int unique = RemoveDublicates(nums);
+
+        for (int i = 0; i < unique; i++) {
+            System.out.print(nums[i] + " ");
         }
     }
 }
