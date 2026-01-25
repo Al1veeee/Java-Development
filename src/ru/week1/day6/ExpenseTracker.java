@@ -1,4 +1,4 @@
-package ru.week1.minproject;
+package ru.week1.day6;
 
 import java.util.Scanner;
 import java.util.Locale;
