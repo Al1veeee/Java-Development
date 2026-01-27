@@ -1,7 +1,4 @@
-package ru.week2.day1;
-
-import java.util.Scanner;
-import java.util.Locale;
+package ru.week3.day1;
 
 public class Person {
     private String name;

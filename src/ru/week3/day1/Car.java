@@ -1,4 +1,4 @@
-package ru.week2.day1;
+package ru.week3.day1;
 
 public class Car {
     private String brand;
