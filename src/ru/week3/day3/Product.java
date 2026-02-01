@@ -14,6 +14,13 @@ public class Product {
         return basePrice - (basePrice/100 * discountPercent);
     }
 
+    public String getName() {
+        return name;
+    }
+    public Double getBasePrice() {
+        return basePrice;
+    }
+
     public void applyDiscount(double percent) {
         this.discountPercent = percent;
     }
